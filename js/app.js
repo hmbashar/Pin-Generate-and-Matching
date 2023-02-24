@@ -17,3 +17,10 @@ function generatePin() {
 
     return random;
 }
+
+document.getElementById('btn-generate-pin').addEventListener('click', function() {
+    const pin = getPin();
+    // display pin
+    const displayPinField = document.getElementById('display-pin');
+    displayPinField.value = pin;
+});
